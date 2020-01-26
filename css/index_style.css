@@ -1,0 +1,26 @@
+.github-repo-logo{
+    width: 10%;
+    float: right;
+}
+
+.logo {
+  width: 5%;
+}
+
+.header {
+  color: white !important;
+  background-color: #505050 !important;
+}
+
+.header-btn {
+  color: white !important;
+}
+
+
+textarea {
+  height: 150px;
+}
+
+.thumbnail {
+  box-shadow: 0px 0px 10px 5px grey;
+}
