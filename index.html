@@ -1,176 +1,259 @@
-<!doctype html>
-<html class="no-js" lang="en">
+<!DOCTYPE html>
+<html lang="en">
 
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Patrick J Petro</title>
-  
-  
 
-  <!-- Bootstrap CSS -->
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
 
-  <!-- Foundation CSS -->
-  <link rel="stylesheet" href="https://dhbhdrzi4tiry.cloudfront.net/cdn/sites/foundation.min.css">
+  <title>Patrick J. Petro</title>
 
-  <!-- Custom CSS -->
-  <link rel="stylesheet" href="css/index_style.css">
+  <!-- Bootstrap core CSS -->
+  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Custom fonts for this template -->
+  <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Varela+Round" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
+
+  <!-- Custom styles for this template -->
+  <link href="css/grayscale.min.css" rel="stylesheet">
 
 </head>
 
-<body>
-  <div class="off-canvas-wrapper">
-    <div class="off-canvas-wrapper-inner" data-off-canvas-wrapper>
-      <div class="off-canvas position-left reveal-for-large" id="my-info" data-off-canvas data-position="left">
-        <div class="row column">
-          <br>
-          <img class="thumbnail" src="images/PJPheadshot.jpg">
-          <h5>Patrick J Petro</h5>
+<body id="page-top">
+
+  <!-- Navigation -->
+  <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
+    <div class="container">
+      <a class="navbar-brand js-scroll-trigger" href="#page-top">Patrick J. Petro</a>
+      <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+        Menu
+        <i class="fas fa-bars"></i>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#about">About Me</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#projects">Portfolio</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#contact">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Header -->
+  <header class="masthead">
+    <div class="container d-flex h-100 align-items-center">
+      <div class="mx-auto text-center">
+        <h1 class="mx-auto my-0 text-uppercase">Patrick J. Petro</h1>
+        <h2 class="text-white-50 mx-auto mt-2 mb-5">Web Developer</h2>
+        <!-- <h2 class="text-white-50 mx-auto mt-2 mb-5"></h2> -->
+        <a href="#about" class="btn btn-primary js-scroll-trigger">Learn More</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- About Section -->
+  <section id="about" class="about-section text-center">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 mx-auto">
+          <img src="img/PJPHeadshot.jpg" class="img-fluid headshot" alt="">
+          <h2 class="text-white mb-4"></h2>
+          <p class="text-white-50">I have always been fascinated with the different possibilites programming has to offer. Starting with simple HTML and CSS, I found a passion for web development and am currently in a full stack program to learn more server side code. My goal is to use my knowledge to develop applications and websites to improve efficency in our everyday lives.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section id="projects" class="projects-section bg-light">
+    <div class="container">
+
+      <h1>Example Applications & Websites</h1>
+
+      <!-- Project One Row -->
+      <div class="row justify-content-center no-gutters mb-5 mb-lg-0">
+        <div class="col-lg-6">
+          <a href="https://pjpetro.github.io/DayPlanner/" target="_blank"><img class="img-fluid" src="img/DayPlannerScreenshot.png" alt=""></a>
+        </div>
+        <div class="col-lg-6">
+          <div class="bg-black text-center h-100 project">
+            <div class="d-flex h-100">
+              <div class="project-text w-100 my-auto text-center text-lg-left">
+                <h4 class="text-white">Day Planner</h4>
+                <p class="mb-0 text-white-50">Plan your workday with this application, which uses local storage to save tasks and removes them from local storage when complete.</p>
+                <a href="https://github.com/pjpetro/DayPlanner" target="_blank" class="mx-2 prof-social-media"><i class="fab fa-github fa-2x float-right"></i></a>
+                <hr class="d-none d-lg-block mb-0 ml-0">
+              </div>
+            </div>
+          </div>
         </div>
       </div>
 
-      <div class="off-canvas-content" data-off-canvas-content>
-        <div class="title-bar hide-for-large">
-          <div class="title-bar-left">
-            <button class="menu-icon" type="button" data-open="my-info"></button>
-            <span class="title-bar-title">Patrick J Petro</span>
+      <!-- Project Two Row -->
+      <div class="row justify-content-center no-gutters">
+        <div class="col-lg-6">
+          <a href="https://pjp-notetaker.herokuapp.com/" target="_blank"><img class="img-fluid" src="img/NoteTakerScreenshot.png" alt=""></a>
+        </div>
+        <div class="col-lg-6 order-lg-first">
+          <div class="bg-black text-center h-100 project">
+            <div class="d-flex h-100">
+              <div class="project-text w-100 my-auto text-center text-lg-right">
+                <h4 class="text-white">Note Taker</h4>
+                <p class="mb-0 text-white-50">Whether its something to add to your shopping list or just a reminder for later, add it to this note taking site deployed using Heroku.</p>
+                <a href="https://github.com/pjpetro/NoteTaker" target="_blank" class="mx-2 prof-social-media"><i class="fab fa-github fa-2x float-left"></i></a>
+                <hr class="d-none d-lg-block mb-0 mr-0">
+              </div>
+            </div>
           </div>
         </div>
-        <div class="callout header">
-          <div class="row column">
-            
-             <!-- Button trigger modal -->
-              <button type="button" class="btn btn-outline-secondary header-btn" data-toggle="modal" data-target="#exampleModalCenter">
-                Contact Me
-              </button>
-              <a href="documents/PatrickJPetroResume.pdf" target="_blank"><button class="btn btn-outline-secondary header-btn">
-                Resume
-              </button></a>
+      </div>
+
+      <!-- Project Three Row -->
+      <div class="row justify-content-center no-gutters mb-5 mb-lg-0">
+        <div class="col-lg-6">
+          <a href="https://pjpetro.github.io/PasswordGenerator/" target="_blank"><img class="img-fluid" src="img/PasswordGeneratorScreenshot.png" alt=""></a>
+        </div>
+        <div class="col-lg-6">
+          <div class="bg-black text-center h-100 project">
+            <div class="d-flex h-100">
+              <div class="project-text w-100 my-auto text-center text-lg-left">
+                <h4 class="text-white">Password Generator</h4>
+                <p class="mb-0 text-white-50">Need a password, but can't think of anything to use? Generate a random one with the click of a button!</p>
+                <a href="https://github.com/pjpetro/PasswordGenerator" target="_blank" class="mx-2 prof-social-media"><i class="fab fa-github fa-2x float-right"></i></a>
+                <hr class="d-none d-lg-block mb-0 ml-0">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Project Four Row -->
+      <div class="row justify-content-center no-gutters">
+        <div class="col-lg-6">
+          <a href="https://pjpetro.github.io/WeatherDash/" target="_blank"><img class="img-fluid" src="img/WeatherDashScreenShot.png" alt=""></a>
+        </div>
+        <div class="col-lg-6 order-lg-first">
+          <div class="bg-black text-center h-100 project">
+            <div class="d-flex h-100">
+              <div class="project-text w-100 my-auto text-center text-lg-right">
+                <h4 class="text-white">Weather Dashboard</h4>
+                <p class="mb-0 text-white-50">Easily look up the weather of a specific city with this weather dashboard.</p>
+                <a href="https://github.com/pjpetro/WeatherDash " target="_blank" class="mx-2 prof-social-media"><i class="fab fa-github fa-2x float-left"></i></a>
+                <hr class="d-none d-lg-block mb-0 mr-0">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+     
+      <!-- Featured Project Row -->
+      <div class="row align-items-center no-gutters mb-4 mb-lg-5">
+        <div class="col-xl-8 col-lg-7">
+          <img class="img-fluid mb-3 mb-lg-0" src="img/GeekOutLogoFull.png" alt="">
+          <!-- <img class="img-fluid mb-3 mb-lg-0" src="img/GeekOutLogoFull2.png" alt=""> -->
+        </div>
+        <div class="col-xl-4 col-lg-5">
+          <div class="featured-text text-center text-lg-left">
+            <h4>GeekOut Podcast</h4>
+            <p class="text-black-50 mb-0">The "Geekout Podcast is hosted by a group of friends, myself included. We talk about what we find interesting in life and in the world. Super laid back, more like a hang out. Listen to us on Anchor, Apple Podcasts, Spotify and many more! Click the microphone to check out our page on Anchor. <a href="https://anchor.fm/geekoutpcast" target="_blank"><i class="fas fa-microphone fa-1x microphone-icon"></i></a></p>
           </div>
         </div>
 
-
-        <div class="row small-up-2 medium-up-3 large-up-4 ">
-        <h5>About Me</h5>
-        <p>Let me start off with a fun fact, my birthday is on St. Patrick's Day! You guessed it, that's why my name is Patrick. I'm a Uconn Alumnus (2016) with a Bachelor's in Communications and currently work for an engineering consulting firm.</p>
-        <p>What drove me to development is having the ability to improve efficency in procedures for companies. My experience is with HTML5, CSS3, Foundation, Javascript, JQuery, and Node.</p>
-        <p>In my spare time, I both watch and play Ice Hockey and enjoy the outdoors; going on hikes, having bon fires, and visiting places I've never been before as well as trying new things</p> 
-        <p>Check out some sample applications and websites below!</p>
-        </div>
+        <!-- <h1>Other Work</h1> -->
       
-        <br>
-        <br>
+      </div>
 
-        <div class="row small-up-2 medium-up-3 large-up-4">
-          <div class="column">
-            <a href="https://pjpetro.github.io/DayPlanner" target="_blank"><img class="thumbnail" src="images/DayPlanner.png"></a>
-            <h5>Day Planner
-              <a href="https://github.com/pjpetro/DayPlanner" target="_blank"><img class="github-repo-logo" src="images/GithubLogo.png"></a>
-            </h5>
-          </div>
-          
-          <div class="column">
-            <a href="https://pjpetro.github.io/PasswordGenerator" target="_blank"><img class="thumbnail" src="images/PasswordGenerator.png"></a>
-            <h5>Password Generator
-              <a href="https://github.com/pjpetro/PasswordGenerator" target="_blank"><img class="github-repo-logo" src="images/GithubLogo.png"></a>
-            </h5>
-          </div>
-          
-          <div class="column">
-            <a href="https://pjpetro.github.io/JubilantCouscous" target="_blank"><img class="thumbnail" src="images/Resturants.png"></a>
-            <h5>Resturants
-              <a href="https://github.com/pjpetro/JubilantCouscous" target="_blank"><img class="github-repo-logo" src="images/GithubLogo.png"></a>
-            </h5>
-          </div>
-          
-          <div class="column">
-            <a href="https://pjpetro.github.io/WeatherDash/" target="_blank"><img class="thumbnail" src="images/WeatherDashboard.png"></a>
-            <h5>Weather App
-              <a href="https://github.com/pjpetro/WeatherDash" target="_blank"><img class="github-repo-logo" src="images/GithubLogo.png"></a>
-            </h5>
-          </div>
+    </div>
+  </section>
 
-        </div>
-
-        <hr>
-        <div class="row">
-          
-          
+  <!-- Signup Section -->
+  <section id="signup" class="signup-section">
+  
+    <div class="container">
+      <div class="row">
+        <div class="col-md-10 col-lg-8 mx-auto text-center">
+          <h2 class="text-white mb-5">Contact</h2>
         </div>
       </div>
     </div>
+  </section>
 
+  <!-- Contact Section -->
+  <section id="contact" class="contact-section bg-black">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4 mb-3 mb-md-0">
+          <div class="card py-4 h-100">
+            <div class="card-body text-center">
+              <i class="fas fa-map-marked-alt text-primary mb-2"></i>
+              <h4 class="text-uppercase m-0">Address</h4>
+              <hr class="my-4">
+              <div class="small text-black-50">135 Sixth St, Bristol CT 06010</div>
+            </div>
+          </div>
+        </div>
 
+        <div class="col-md-4 mb-3 mb-md-0">
+          <div class="card py-4 h-100">
+            <div class="card-body text-center">
+              <i class="fas fa-envelope text-primary mb-2"></i>
+              <h4 class="text-uppercase m-0">Email</h4>
+              <hr class="my-4">
+              <div class="small text-black-50">
+                <a href="mailto:patrickjpetro@icloud.com">patrickjpetro@icloud.com</a>
+              </div>
+            </div>
+          </div>
+        </div>
 
-    <!-- Contact Modal -->
-    <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
-      <div class="modal-dialog modal-dialog-centered" role="document">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h5 class="modal-title" id="exampleModalCenterTitle">Contact Me</h5>
-            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-              <span aria-hidden="true">&times;</span>
-            </button>
-          </div>
-          <div class="modal-body">
-            <ul>
-              <p>Email: <a href="mailto:petropatrickj@gmail.com">petropatrickj@gmail.com</a></p>
-              <p>Cell: <a href="tel:8606906852">(860) 690-6852</a></p>
-              <a href="https://www.linkedin.com/in/patrick-j-petro/" target="_blank"><img class="logo" src="images/LinkedInLogo.png"></a>
-              <a href="https://github.com/pjpetro" target="_blank"><img class="logo" src="images/GithubLogo.png"></a>
-            </ul>
-          </div>
-          <div class="modal-header">
-          <h5 class="modal-title" id="exampleModalCenterTitle">Send a message</h5>
-          </div>  
-          <div class="modal-body">
-              <form>
-                <div class="form-group">
-                  <label for="InputName">Name</label>
-                  <input type="email" class="form-control" id="InputName">
-                </div>
-              <div class="form-group">
-                <label for="InputEmail1">Email</label>
-                <input type="email" class="form-control" id="InputEmaillAddress">
-              </div>
-              <div class="form-group">
-                <label for="InputPhone">Phone</label>
-                <input type="text" class="form-control" id="InputPhoneNumb">
-              </div>
-              <div class="form-group">
-                <label for="InputMsg">Message</label>
-                <textarea id="TextMsgBox"></textarea>
-              </div>
-              <button type="submit" class="btn btn-primary">Send</button>
-            </form>
-          </div>
-          <div class="modal-footer">
-            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <div class="col-md-4 mb-3 mb-md-0">
+          <div class="card py-4 h-100">
+            <div class="card-body text-center">
+              <i class="fas fa-mobile-alt text-primary mb-2"></i>
+              <h4 class="text-uppercase m-0">Phone</h4>
+              <hr class="my-4">
+              <div class="small text-black-50"><a href="860-690-6852">+1 (860) 690-6852</a></div>
+            </div>
           </div>
         </div>
       </div>
+
     </div>
+  </section>
+  
 
+  <!-- Footer -->
+  <footer class="bg-black small text-center text-white-50">
+    <div class="social d-flex justify-content-center">
+      <a href="documents/PatrickJPetroResume.pdf" target="_blank" class="mx-2 prof-social-media"><i class="fas fa-file-alt fa-2x"></i></a>
+      <a href="https://github.com/pjpetro" target="_blank" class="mx-2 prof-social-media"><i class="fab fa-github fa-2x"></i></a>
+      <a href="https://www.linkedin.com/in/patrick-j-petro/" target="_blank" class="mx-2 prof-social-media"><i class="fab fa-linkedin fa-2x"></i></a>
+    </div>
+    <!-- <div class="container">
+      Copyright &copy; 2020
+    </div> -->
+  </footer>
 
+  <!-- Bootstrap core JavaScript -->
+  <script src="vendor/jquery/jquery.min.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
 
+  <!-- Plugin JavaScript -->
+  <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
 
-  </div>
+  <!-- Custom scripts for this template -->
+  <script src="js/grayscale.min.js"></script>
 
-  <!-- Foundarion JS & JQuery -->
-  <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
-  <script src="https://dhbhdrzi4tiry.cloudfront.net/cdn/sites/foundation.js"></script>
-
-
-   <!-- Bootstrap JS & JQuery -->
-  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
-  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
-
-
-  <script>
-    $(document).foundation();
-  </script>
 </body>
 
 </html>
