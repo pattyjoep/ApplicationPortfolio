@@ -1,7 +1,7 @@
 # ApplicationPortfolio
 
-Updated version of my application protfolio
+This portfolio was created during my time in a full stack web development coding bootcamp. 
 
-Updated from using both Bootstrap to also include Foundation as the base framework then uses Bootstrap for the modal popup with contact information
+Created using styling and layout template from https://startbootstrap.com/
 
-also moved from having separate HTML files to only one so only one nav bar was needed
+Deployed link: https://pjpetro.github.io/ApplicationPortfolio/
