@@ -248,11 +248,18 @@ a:focus,a:hover{
 }
 
 .headshot{
-    border-radius: 50px;
+    border-radius: 20px;
 }
+
+.headshot-circle {
+    height: 30px;
+    margin-bottom: 5px;
+}
+
 .microphone-icon{
     color: #b66121
 }
+
 .prof-social-media{
     color: rgba(255, 255, 255, 0.596)!important
 }
