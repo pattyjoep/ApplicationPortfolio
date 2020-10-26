@@ -257,7 +257,9 @@ a:focus,a:hover{
     height: 30px;
     margin-bottom: 5px;
 }
-
+.icon {
+    margin: 9px;
+}
 .microphone-icon{
     color: #b66121
 }
