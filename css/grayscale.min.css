@@ -95,6 +95,7 @@
     max-width:20rem;
     font-size:1rem
 }
+
 @media (min-width:768px){
     .masthead h1{
         font-size:3rem;
@@ -116,7 +117,7 @@
         font-size:1.25rem
     }
 }
-.btn{
+.btn {
     box-shadow:0 .1875rem .1875rem 0 rgba(0,0,0,.1)!important;
     padding:1.25rem 2rem;
     font-family:'Varela Round';
@@ -151,15 +152,15 @@
 .projects-section .featured-text{
     padding:2rem
 }
+.projects-section .project-text{
+    padding:3rem;
+    font-size:90%
+}
 @media (min-width:992px){
     .projects-section .featured-text{
         padding:0 0 0 2rem;
         border-left:.5rem solid #64a19d
     }
-}
-.projects-section .project-text{
-    padding:3rem;
-    font-size:90%
 }
 @media (min-width:992px){
     .projects-section .project-text{
@@ -244,7 +245,8 @@ a:focus,a:hover{
 }
 
 .sample-logo {
-    height: 80px
+    height: 80px;
+    margin: 20px;
 }
 
 .headshot{
