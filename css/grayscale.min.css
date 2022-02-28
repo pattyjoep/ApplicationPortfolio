@@ -251,6 +251,7 @@ a:focus,a:hover{
 
 .headshot{
     border-radius: 20px;
+    width: 50%;
 }
 
 .headshot-circle {
