@@ -257,6 +257,7 @@ a:focus,a:hover{
 .headshot-circle {
     height: 30px;
     margin-bottom: 5px;
+    border-radius: 50%;
 }
 .icon {
     margin: 9px;
