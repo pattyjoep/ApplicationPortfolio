@@ -14,6 +14,8 @@ This is my personal portfolio site, built to showcase my work, skills, and backg
 - Google Font API
 - Font Awesome
 - Open Graph
+- Formspree
+
 
 ## 📸 Features
 
