@@ -15,12 +15,14 @@ This is my personal portfolio site, built to showcase my work, skills, and backg
 - Font Awesome
 - Open Graph
 - Formspree
-
+- Netlify
 
 ## 📸 Features
 
-- About Me tile
-- Portfolio/projects grid with details
+- Information tile
+- Projects grid with details
+- Interactive individual component examples
+- Contact form
 - Responsive design (mobile/tablet/desktop)
 
 ## 🚀 Getting Started (for devs)
