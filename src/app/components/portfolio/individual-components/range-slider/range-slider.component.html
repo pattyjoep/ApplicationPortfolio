@@ -1,0 +1,13 @@
+<input
+    #rangeSlider
+    (input)="onSliderInput($event)"
+    type="range"
+    class="range-slider"
+    min="0"
+    max="100"
+    [value]="sliderValue"
+/>
+<p>Value: {{ sliderValue }}</p>
+<span class="badge">
+    <p>{{ sliderValue }}</p>
+</span>

@@ -1,7 +1,32 @@
-# ApplicationPortfolio
+# Patrick Petro, Front-End Developer - Portfolio Website
 
-This portfolio was created during my time in a full stack web development coding bootcamp. 
+This is my personal portfolio site, built to showcase my work, skills, and background as a front-end web developer.
 
-Created using styling and layout template from https://startbootstrap.com/
+## 🔗 Live Site
 
-Deployed link: https://pjpetro.github.io/ApplicationPortfolio/
+[https://pattyjoep.com](https://pattyjoep.com)
+
+## 🛠️ Tech Stack
+
+- Angular 
+- TypeScript
+- SCSS
+- Google Font API
+- Font Awesome
+- Open Graph
+
+## 📸 Features
+
+- About Me tile
+- Portfolio/projects grid with details
+- Responsive design (mobile/tablet/desktop)
+
+## 🚀 Getting Started (for devs)
+
+To run this project locally:
+
+```bash
+git clone https://github.com/pattyjoep/portfolio_pattyjoep.git
+cd portfolio_pattyjoep
+npm install
+npm run start

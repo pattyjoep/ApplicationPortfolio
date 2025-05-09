@@ -1,0 +1,130 @@
+@import "../../../../../scss/custom-variables.scss";
+
+button {
+    background: linear-gradient(to right, #4d6f8b, #25557c);
+}
+
+.menu {
+    position: relative;
+
+    .menu-toggle {
+        position: absolute;
+        top: 30px;
+        left: 0;
+        right: 0;
+        display: grid;
+        place-items: center;
+        min-width: auto;
+        width: 60px;
+        height: 60px;
+        border-radius: 50%;
+        background-color: #1968b7;
+        z-index: 5;
+        margin: 0 auto;
+        letter-spacing: normal;
+
+        &.open {
+            span {
+                transform: rotate(360deg);
+
+                &.menu-icon {
+                    font-size: 0px;
+                }
+                &.menu-close-icon {
+                    font-size: 25px;
+                }
+            }
+        }
+
+        &:hover {
+            opacity: 1;
+        }
+
+        span {
+            position: absolute;
+            color: #ffffff;
+            transition: 0.5s;
+
+            &.menu-icon {
+                font-size: 25px;
+            }
+            &.menu-close-icon {
+                font-size: 0px;
+            }
+        }
+    }
+
+    .menu-list {
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        z-index: 3;
+        list-style: none;
+        margin: 0;
+
+        &.open {
+            .menu-item {
+                &.home {
+                    top: -5px;
+                    right: 55px;
+                    transition-delay: 0.2s;
+
+                    @media (width <= $screenSize-mobileMini) {
+                        right: 50px;
+                    }
+                }
+                &.user {
+                    top: 8px;
+                    right: 90px;
+                    transition-delay: 0.3s;
+
+                    @media (width <= $screenSize-mobileMini) {
+                        right: 85px;
+                    }
+                }
+                &.settings {
+                    top: 42px;
+                    right: 105px;
+                    transition-delay: 0.1s;
+
+                    @media (width <= $screenSize-mobileMini) {
+                        right: 100px;
+                    }
+                }
+                &.share {
+                    top: 42px;
+                    right: 5px;
+                    transition-delay: 0.4s;
+
+                    @media (width <= $screenSize-mobileMini) {
+                        right: 0;
+                    }
+                }
+                &.search {
+                    top: 8px;
+                    right: 20px;
+                    transition-delay: 0.5s;
+
+                    @media (width <= $screenSize-mobileMini) {
+                        right: 15px;
+                    }
+                }
+            }
+        }
+
+        .menu-item {
+            position: absolute;
+            top: 46px;
+            right: 55px;
+            bottom: 0rem;
+            min-width: auto;
+            width: 30px;
+            height: 30px;
+            padding: 0;
+            border-radius: 50%;
+            letter-spacing: normal;
+            transition: 0.5s;
+        }
+    }
+}

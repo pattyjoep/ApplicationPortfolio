@@ -1,0 +1,34 @@
+@import "../../../../scss/custom-variables.scss";
+
+.individual-components {
+    // justify-content: start;
+    margin: 10px 0 0;
+    gap: 15px;
+
+    // @media (width <= $screenSize-mobileMini) {
+    //     gap: 20px;
+    // }
+
+    .individual-component-card {
+        position: relative;
+        width: 140px;
+        height: 140px;
+        background-color: #363636;
+        padding: 10px;
+        border-radius: 10px;
+
+        @media (width <= $screenSize-mobileMini) {
+            width: 130px;
+            height: 130px;
+        }
+
+        .individual-component-card-footer {
+            position: absolute;
+            left: 0;
+            right: 0;
+            bottom: 10px;
+            text-align: center;
+            font-size: 14px;
+        }
+    }
+}

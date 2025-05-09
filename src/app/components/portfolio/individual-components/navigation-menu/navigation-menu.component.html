@@ -1,0 +1,15 @@
+<div class="menu">
+	<button (click)="toggleMenu()" class="menu-toggle" [ngClass]="{ open: menuOpen }">
+		<span class="menu-icon">
+			<i class="fa-solid fa-bars"></i>
+		</span>
+		<span class="menu-close-icon">
+			<i class="fa-solid fa-xmark"></i>
+		</span>
+	</button>
+	<ul class="menu-list" [ngClass]="{ open: menuOpen }">
+		<button *ngFor="let item of navigationMenuOptions" class="menu-item {{ item.key }}">
+			<i class="fa-solid fa-{{item.icon}}"></i>
+		</button>
+	</ul>
+</div>

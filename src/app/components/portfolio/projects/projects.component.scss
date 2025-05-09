@@ -1,0 +1,66 @@
+.projects {
+    gap: 20px;
+    margin: 10px 0 0;
+
+    .project-card {
+        max-width: 290px;
+
+        .project-card-body {
+            position: relative;
+            width: 100%;
+            height: 150px;
+            overflow: hidden;
+            cursor: pointer;
+            border-radius: 5px;
+
+            .flip-container {
+                perspective: 1000px; /* needed for the 3D effect */
+                height: 100%;
+
+                .flip-content {
+                    position: relative;
+                    transition: 0.5s ease-in-out;
+                    transform-style: preserve-3d; /* keeps the 3D perspective */
+                    width: 100%;
+                    height: 100%;
+
+                    &.flipped {
+                        transform: rotateY(180deg);
+                    }
+
+                    .front,
+                    .back {
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                        right: 0;
+                        bottom: 0;
+                        backface-visibility: hidden; /* hides the back face when flipped */
+                    }
+
+                    /* The front of the body */
+                    .front {
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                    }
+
+                    .back {
+                        transform: rotateY(180deg) /* flip 180 degrees to show back side of card body */; // translateZ(30px) /* pop text out to create 3d effect (note: affects padding when enabled) */
+                        padding: 5px;
+                        overflow-y: auto;
+                        background-color: #818181;
+
+                        p {
+                            margin: 0;
+                        }
+                    }
+                }
+            }
+        }
+        .project-card-footer {
+            justify-content: start;
+            margin: 5px 0 0;
+        }
+    }
+}

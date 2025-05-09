@@ -1,0 +1,26 @@
+@import "../scss/custom-variables.scss";
+
+.content {
+    max-width: 1140px;
+    margin: 10px auto;
+
+    .content-tile {
+        max-height: 545px;
+        justify-content: start;
+        align-items: start;
+        flex-grow: 1;
+        flex-basis: 50%;
+
+        @media (width <= $screenSize-tablet) {
+            max-height: unset;
+        }
+
+        &.content-tile-individual-components {
+            min-height: 475px;
+
+            @media (width <= $screenSize-desktopXL) {
+                min-height: 200px;
+            }
+        }
+    }
+}

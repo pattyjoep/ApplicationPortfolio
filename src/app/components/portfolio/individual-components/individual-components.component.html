@@ -1,0 +1,12 @@
+<h1>Components</h1>
+<div class="individual-components display-flex">
+    <div *ngFor="let individualComponent of individualComponents" class="individual-component-card">
+        <app-toggle-switch *ngIf="individualComponent.selector === 'toggleSwitch'"></app-toggle-switch>
+        <app-navigation-menu *ngIf="individualComponent.selector === 'navMenu'"></app-navigation-menu>
+        <app-range-slider *ngIf="individualComponent.selector === 'rangeSlider'"></app-range-slider>
+        <app-loading-indicator *ngIf="individualComponent.selector === 'loadIndicator'"></app-loading-indicator>
+        <div class="individual-component-card-footer">
+            <h2>{{individualComponent.title}}</h2>
+        </div>  
+    </div>
+</div>

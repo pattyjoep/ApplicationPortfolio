@@ -1,0 +1,21 @@
+@import "../../../scss/custom-variables.scss";
+
+nav {
+    position: sticky;
+    top: 5px;
+    max-width: 395px;
+    color: #fff;
+    background-color: #00000099;
+    backdrop-filter: blur(5px);
+    padding: 10px;
+    box-shadow: 0px 0px 5px #0a0a0a;
+    border-radius: 10px;
+    margin: auto;
+    z-index: 9999;
+
+    @media (width <= $screenSize-tablet) {
+        flex-wrap: nowrap;
+        justify-content: start;
+        overflow: auto;
+    }
+}

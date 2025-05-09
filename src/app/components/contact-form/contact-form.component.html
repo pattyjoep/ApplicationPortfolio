@@ -1,0 +1,84 @@
+<form [action]="formSubmissionURL" method="POST">
+    <h2>Let's Connect!</h2>
+    <div class="form-inputs display-flex">
+        <!-- first name -->
+        <div class="form-group">
+            <label for="name">
+                <i class="fa-solid fa-user"></i>&nbsp; First Name
+            </label>
+            <input id="nameFirst" name="nameFirst" type="text" minlength="2" maxlength="50" [formControl]="form.controls.name_first">
+            <span *ngIf="form.controls.name_first.hasError('required')" class="input-validation-error" @fadeInOut>
+                Required
+            </span>  
+            <span *ngIf="form.controls.name_first.hasError('minlength')" class="input-validation-error" @fadeInOut>
+                Minimum 2 characters
+            </span>
+        </div>
+
+        <!-- last name -->
+        <div class="form-group">
+            <label for="name">
+                <i class="fa-solid fa-user"></i>&nbsp; Last Name
+            </label>
+            <input id="nameLast" name="nameLast" type="text" minlength="2" maxlength="50" [formControl]="form.controls.name_last">
+            <span *ngIf="form.controls.name_last.hasError('required')" class="input-validation-error" @fadeInOut>
+                Required
+            </span>  
+            <span *ngIf="form.controls.name_last.hasError('minlength')" class="input-validation-error" @fadeInOut>
+                Minimum 2 characters
+            </span>
+        </div>
+
+        <!-- email -->
+        <div class="form-group">
+            <label for="email">
+                <i class="fa-solid fa-at"></i>&nbsp; Email
+            </label>
+            <input id="email" name="email" type="email" inputmode="email" [formControl]="form.controls.email">
+            <span *ngIf="form.controls.email.hasError('required')" class="input-validation-error" @fadeInOut>
+                Required
+            </span>
+            <span *ngIf="form.controls.email.hasError('email')" class="input-validation-error" @fadeInOut>
+                Invalid Email
+            </span>
+        </div>
+
+         <!-- phone -->
+         <div class="form-group">
+            <label for="phone">
+                <i class="fa-solid fa-phone"></i>&nbsp; Phone
+            </label>
+            <input id="phone" name="phone" type="tel" inputmode="tel" minlength="10" maxlength="10" [formControl]="form.controls.phone">
+            <span *ngIf="form.controls.phone.hasError('required')" class="input-validation-error" @fadeInOut>
+                Required
+            </span>
+            <span *ngIf="form.controls.phone.hasError('minlength') || form.controls.phone.hasError('pattern')" class="input-validation-error" @fadeInOut>
+                Must be 10 digits
+            </span>
+        </div>
+
+        <!-- message -->
+        <div class="form-group">
+            <label for="message">
+                <i class="fa-solid fa-keyboard"></i>&nbsp; Message   
+            </label>
+            <textarea id="message" name="message" maxlength="1000" [formControl]="form.controls.message"></textarea>
+            <span *ngIf="form.controls.message.hasError('required')" class="input-validation-error" @fadeInOut>
+                Required
+            </span>   
+            <span class="contact-form-message-input-character-count">
+                {{ form.controls.message.value?.length || 0 }}/1000
+            </span>   
+        </div>
+    </div>
+    
+    <div class="form-actions display-flex">
+        <!-- <button class="contact-form-button outlined">
+            <i class="fa-solid fa-ban"></i> Cancel
+        </button> -->
+    
+        <button type="submit" class="contact-form-button" [disabled]="form.invalid">
+            <i class="fa-solid fa-paper-plane"></i> Submit
+        </button>
+    </div>
+</form>

@@ -1,0 +1,118 @@
+@import "../../../scss/custom-variables.scss";
+
+// define wave animation
+@keyframes wave {
+    0% {
+        transform: rotate(0deg);
+    }
+    10% {
+        transform: rotate(14deg);
+    }
+    20% {
+        transform: rotate(-8deg);
+    }
+    30% {
+        transform: rotate(14deg);
+    }
+    40% {
+        transform: rotate(-4deg);
+    }
+    50% {
+        transform: rotate(10deg);
+    }
+    60% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(0deg);
+    }
+}
+
+.info-tile {
+    max-width: 425px;
+
+    @media (width <= $screenSize-mobileMini) {
+        gap: 5px;
+    }
+
+    .info-tile-header {
+        justify-content: start;
+        gap: 20px;
+        width: 100%;
+
+        @media (width <= $screenSize-mobileMini) {
+            justify-content: center;
+            gap: 10px;
+        }
+
+        .image-container {
+            width: 100px;
+            height: 100px;
+            background: radial-gradient(#fff, #477f88);
+            border: 2px solid #64a19d;
+            border-radius: 50%;
+
+            @media (width <= $screenSize-mobileMini) {
+                width: 120px;
+                height: 120px;
+            }
+
+            img {
+                // filter: drop-shadow(0px 0px 1px #000);
+                border-radius: inherit;
+                object-fit: cover;
+            }
+        }
+
+        .title {
+            h1 {
+                @media (width <= $screenSize-mobileMini) {
+                    text-align: center;
+                }
+            }
+
+            h2 {
+                color: #82d5cf;
+
+                @media (width <= $screenSize-mobileMini) {
+                    text-align: center;
+                }
+            }
+
+            .skills-icons {
+                justify-content: space-between;
+                gap: 0;
+                font-size: 20px;
+                margin: 2px 0 0;
+            }
+        }
+    }
+    .info-tile-body {
+        .wave {
+            animation: wave 2s ease-in-out 3;
+            display: inline-block;
+            transform-origin: 70% 70%; /* anchor the rotation around the wrist */
+        }
+
+        .cta-connect-with-me {
+            color: #82d5cf;
+        }
+
+        &:hover {
+            .wave {
+                animation: wave 2s ease-in-out infinite;
+            }
+        }
+    }
+    .info-tile-footer {
+        justify-content: start;
+        gap: 25px;
+        width: 100%;
+        margin: auto 0 0;
+
+        @media (width <= $screenSize-tablet) {
+            justify-content: space-around;
+            gap: 0;
+        }
+    }
+}

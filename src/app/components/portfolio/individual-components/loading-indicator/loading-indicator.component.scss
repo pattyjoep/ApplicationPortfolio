@@ -1,0 +1,66 @@
+.loading {
+    position: absolute;
+    // z-index: 2147483647; // ensures load component is overlayed on all page elements
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 45px;
+    background-color: transparent;
+    opacity: 0.5;
+    backdrop-filter: blur(5px);
+    border-radius: 10px;
+
+    .indicator {
+        display: flex;
+        height: 100%;
+        border-radius: 0;
+
+        .loading-icons {
+            @keyframes jumpSplit {
+                0% {
+                    width: 60px;
+                    height: 60px;
+                }
+                100% {
+                    width: 80px;
+                    height: 15px;
+                }
+            }
+            animation: jumpSplit 0.5s ease-in infinite alternate;
+            position: relative;
+            margin: auto;
+
+            .loading-icon {
+                @keyframes curve {
+                    0% {
+                        border-radius: 5px;
+                    }
+                    100% {
+                        border-radius: 50%;
+                    }
+                }
+                animation: curve 0.5s ease-out infinite alternate;
+                position: absolute;
+                display: block;
+                width: 20px;
+                height: 20px;
+                background-color: #cb7eff;
+
+                &.top {
+                    top: 0;
+                    left: 0;
+                    right: 0;
+                    margin: auto;
+                }
+                &.left {
+                    left: 0;
+                    bottom: 0;
+                }
+                &.right {
+                    right: 0;
+                    bottom: 0;
+                }
+            }
+        }
+    }
+}

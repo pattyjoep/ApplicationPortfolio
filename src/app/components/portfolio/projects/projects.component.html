@@ -1,0 +1,31 @@
+<h1>Projects</h1>
+<div class="projects display-flex">
+    <div *ngFor="let project of projects" class="project-card">
+        <div class="project-card-header">
+            <h2>{{project.title}}</h2>
+        </div>
+        <div (click)="flipCardBody(project.id)" class="project-card-body">
+            <div class="flip-container">
+                <div class="flip-content" [ngClass]="{ flipped: selectedCardId === project.id }">
+                    <div class="front">
+                        <img src="assets/images/thumbnails/projectThumbnail_{{project.thumbnail}}.png" class="project-thumbnail" alt="">
+                        <a class="project-learn-more-link">
+                            <i class="fa-solid fa-circle-info"></i>
+                        </a>
+                    </div>
+                    <div class="back">
+                        <p>{{project.description}}</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="project-card-footer display-flex">
+            <button (click)="windowService.openTab(project.url_repo)" class="project-card-footer-button">
+                <i class="fa-brands fa-github"></i> Repo
+            </button>
+            <button (click)="windowService.openTab(project.url_production)" class="project-card-footer-button">
+                <i class="fa-solid fa-up-right-from-square"></i> Demo
+            </button>
+        </div>
+    </div>
+</div>

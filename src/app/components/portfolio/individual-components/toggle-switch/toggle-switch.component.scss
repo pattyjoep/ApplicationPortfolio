@@ -1,0 +1,114 @@
+*:before,
+*:after {
+    position: absolute;
+    left: 0;
+    content: "";
+}
+
+.effects {
+    label {
+        margin-left: 5px;
+    }
+}
+
+.toggle-switch {
+    position: relative;
+}
+
+.toggle-div {
+    position: relative;
+    display: inline-block;
+    width: 100%;
+
+    input {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 40px;
+        height: 40px;
+        opacity: 0;
+
+        &:checked + label {
+            background-color: #8bc34a;
+
+            .toggle-switch-status {
+                top: 2px;
+                left: 65px;
+                background-color: transparent;
+                border: 2px solid #fff;
+
+                &.roll {
+                    // adds roll effect during transition
+                    transform: rotate(360deg);
+                }
+
+                &::before {
+                    width: 10px;
+                    transform: rotate(45deg) translate(20px, 11px);
+                }
+
+                &::after {
+                    width: 25px;
+                    transform: rotate(-45deg) translate(-6px, 20px);
+                }
+            }
+        }
+    }
+
+    label {
+        position: relative;
+        left: 50%;
+        transform: translateX(-50%);
+        display: inline-block;
+        width: 7em;
+        height: 3em;
+        background-color: #4f5766db;
+        border-radius: 50px;
+        margin: 0 0 10px;
+        transition: all 0.3s ease;
+        transform-origin: 20% center;
+        cursor: pointer;
+
+        &:before {
+            display: block;
+            top: 0.25em;
+            left: 0.25em;
+            width: 2.3em;
+            height: 2.3em;
+            // border: 2px solid #88cf8f;
+            content: none;
+            border-radius: 2em;
+            transition: all 0.2s ease;
+            transition: 0.3s ease;
+        }
+    }
+
+    .toggle-switch-status {
+        position: absolute;
+        top: 4px;
+        left: 4px;
+        width: 2.5em;
+        height: 2.5em;
+        background-color: #c34a4a;
+        border-radius: 50%;
+        transition: 0.4s ease;
+
+        &::before,
+        &::after {
+            height: 4px;
+            border-radius: 10px;
+            background-color: #ffffff;
+            transition: 0.4s ease;
+        }
+
+        &::before {
+            width: 25px;
+            transform: rotate(45deg) translate(18px, 8px);
+        }
+
+        &::after {
+            width: 25px;
+            transform: rotate(-45deg) translate(-8px, 18px);
+        }
+    }
+}

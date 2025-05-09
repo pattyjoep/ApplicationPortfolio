@@ -1,0 +1,123 @@
+// custom CSS variables fle
+@import "scss/custom-variables.scss";
+
+// Dosis font
+@import url("https://fonts.googleapis.com/css2?family=Dosis:wght@200..800&display=swap");
+
+body {
+    font-family: $fontFamilyBody;
+    font-weight: 500;
+    color: #0c0c0c;
+    background-color: #080808;
+    background-image: url("assets/images/background.jpg");
+    background-size: cover;
+    background-position: top center;
+    background-repeat: no-repeat;
+}
+
+// default display-flex layout class
+.display-flex {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+h1,
+h2,
+h3 {
+    margin: 0;
+}
+
+h1 {
+    letter-spacing: 3px;
+}
+
+img {
+    width: 100%;
+    height: 100%;
+}
+
+.tile {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    min-height: 555px;
+    color: #fff;
+    background-color: #00000099;
+    backdrop-filter: blur(10px);
+    padding: 22px;
+    box-shadow: 0px 0px 5px #0a0a0a;
+    border-radius: 10px;
+    overflow: auto;
+}
+
+a {
+    font-weight: 500;
+    text-decoration: underline;
+    cursor: pointer;
+
+    &:hover {
+        text-decoration: none;
+    }
+
+    &.project-learn-more-link {
+        position: absolute;
+        top: 0;
+        right: 0;
+        font-size: 22px;
+        color: #385f66;
+        background-color: #ffffff;
+        padding: 3px 6px;
+        border-radius: 5px;
+    }
+}
+
+button {
+    min-width: 125px;
+    color: #fff;
+    background: linear-gradient(to right, #478089, #385e65);
+    font-size: 14px;
+    font-weight: 500;
+    letter-spacing: 2px;
+    padding: 10px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.5s ease-in-out;
+
+    &.outlined {
+        color: #385f66;
+        background: transparent;
+        border: 2px solid;
+    }
+
+    &.info-tile-footer-button {
+        background: transparent;
+        font-size: 28px;
+        min-width: auto;
+    }
+
+    &.project-card-footer-button {
+        font-size: 16px;
+        min-width: 140px;
+    }
+
+    &.contact-form-button {
+        min-width: 100%;
+    }
+
+    &:hover {
+        opacity: 0.9;
+    }
+
+    &:disabled {
+        opacity: 0.6;
+        cursor: not-allowed;
+    }
+}
