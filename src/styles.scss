@@ -79,12 +79,12 @@ a {
 }
 
 button {
-    min-width: 125px;
+    min-width: 130px;
     color: #fff;
     background: linear-gradient(to right, #478089, #385e65);
-    font-size: 14px;
+    font-size: 16px;
     font-weight: 500;
-    letter-spacing: 2px;
+    letter-spacing: $button--letter-Spacing;
     padding: 10px;
     border: none;
     border-radius: 10px;
@@ -97,27 +97,39 @@ button {
         border: 2px solid;
     }
 
-    &.info-tile-footer-button {
-        min-width: auto;
-        background: transparent;
-        font-size: 34px;
-    }
-
-    &.project-card-footer-button {
-        font-size: 16px;
-        min-width: 140px;
-    }
-
-    &.contact-form-button {
-        min-width: 100%;
-    }
-
     &:hover {
         opacity: 0.9;
+        letter-spacing: 3px;
     }
 
     &:disabled {
         opacity: 0.6;
         cursor: not-allowed;
+
+        // use base letter-spacing for disabled buttons in a hovered state
+        &:hover {
+            letter-spacing: $button--letter-Spacing;
+        }
     }
+
+    &.info-tile-footer-button {
+        min-width: 62px;
+        background: transparent;
+        font-size: 34px;
+
+        &:hover {
+            scale: 1.1;
+            letter-spacing: $button--letter-Spacing;
+        }
+    }
+
+    &.project-card-footer-button {
+        min-width: 140px;
+    }
+
+    &.contact-form-button {
+        min-width: 100%;
+        height: 45px;
+    }
+
 }
