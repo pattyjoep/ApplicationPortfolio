@@ -16,9 +16,9 @@
         }
 
         &.content-tile-individual-components {
-            min-height: 475px;
+            min-height: 472px;
 
-            @media (width <= $screenSize-desktopXL) {
+            @media (width <= $screenSize-desktopLarge) {
                 min-height: 200px;
             }
         }
